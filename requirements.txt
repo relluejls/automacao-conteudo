@@ -1,0 +1,44 @@
+# Requirements para o gerador_videos.py (Wav2Lip)
+# Este arquivo contém todas as dependências necessárias para executar
+# o script de sincronização labial.
+
+# Dependências principais do Wav2Lip
+torch>=1.7.0
+torchaudio>=0.7.0
+torchvision>=0.8.0
+numpy>=1.19.0
+opencv-python>=4.4.0
+tqdm>=4.50.0
+
+# Processamento de áudio e vídeo
+librosa>=0.8.0
+
+# Ferramentas de face detection (do repositório Wav2Lip)
+# Nota: face_detection é instalado a partir do submódulo do Wav2Lip
+
+# Utilitários adicionais
+scipy>=1.5.0
+
+# ============================================================================
+# [UPSCALE INTEGRATION] - DEPENDÊNCIAS OPCIONAIS PARA GFPGAN/CODEFORMER
+# ============================================================================
+# Para habilitar o suporte a upscale com GFPGAN ou CodeFormer,
+# descomente as linhas abaixo conforme necessário:
+#
+# # GFPGAN dependencies
+# gfpgan>=1.3.0
+# basicsr>=1.4.2
+# facexlib>=0.3.0
+#
+# # CodeFormer dependencies
+# codeformer>=0.1.0
+# pyyaml>=5.4.0
+#
+# # Upscaling adicional com Real-ESRGAN
+# realesrgan>=0.1.0
+# ============================================================================
+
+# Nota: O ffmpeg deve estar instalado no sistema separadamente
+# Ubuntu/Debian: sudo apt-get install ffmpeg
+# macOS: brew install ffmpeg
+# Windows: baixe de https://ffmpeg.org/download.html
